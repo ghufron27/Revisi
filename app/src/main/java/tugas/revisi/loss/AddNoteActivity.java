@@ -28,11 +28,11 @@ public class AddNoteActivity extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
         Intent intent = getIntent();
         if (intent.hasExtra(EXTRA_ID)) {
-            setTitle("Edit Note");
+            setTitle("Edit Catatan");
             titleEditText.setText(intent.getStringExtra(EXTRA_TITLE));
             writtenNoteEditText.setText(intent.getStringExtra(EXTRA_DESCRIPTION));
         } else {
-            setTitle("Add Note");
+            setTitle("Tambah Catatan");
         }
     }
 
